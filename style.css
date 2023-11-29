@@ -1,0 +1,26 @@
+body {
+  font-family: "Arial", sans-serif;
+  text-align: center;
+  margin: 50px;
+  background-color: black;
+  color: white;
+}
+
+#password {
+  font-size: 20px;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid #ccc;
+  width: 300px;
+  user-select: all;
+}
+
+button {
+  font-size: 16px;
+  padding: 10px 20px;
+  cursor: pointer;
+}
+
+h1 {
+  color: gray;
+}

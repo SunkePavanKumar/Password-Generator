@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Password Generator</title>
+    <meta
+      name="description"
+      content="This code creates a simple web page with a
+    password generator. Users can specify the length of the password and choose
+    whether to include uppercase letters, numbers, and special characters. When
+    the Generate Password button is clicked, a random password based on the
+    specified criteria is displayed in the text input field."
+    />
+    <link
+      rel="shortcut icon"
+      href="asserts/favicon-96x96.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Password Generator</h1>
+    <div>
+      <label for="length">Password Length:</label>
+      <input type="number" id="length" value="12" min="6" max="30" />
+    </div>
+    <div>
+      <label for="uppercase">Include Uppercase:</label>
+      <input type="checkbox" id="uppercase" checked />
+    </div>
+    <div>
+      <label for="numbers">Include Numbers:</label>
+      <input type="checkbox" id="numbers" checked />
+    </div>
+    <div>
+      <label for="special">Include Special Characters:</label>
+      <input type="checkbox" id="special" checked />
+    </div>
+    <button onclick="generatePassword()">Generate Password</button>
+    <div>
+      <input type="text" id="password" readonly />
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
